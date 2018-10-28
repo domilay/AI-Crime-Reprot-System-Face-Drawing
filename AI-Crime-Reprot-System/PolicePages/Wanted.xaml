@@ -1,0 +1,22 @@
+﻿<local:BasePageP x:Class="AIFaceDrawing.PolicePages.Wanted"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AIFaceDrawing"
+      mc:Ignorable="d" 
+      Height="470" Width="800"
+      Title="Wanted">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="350"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Width="800" Height="60">Wanted</Label>
+        <Image Grid.Row="1" Name="imageS" Width="500" Height="300"></Image>
+        <Button Grid.Row="2" Width="100" Height="30" HorizontalAlignment="Left" Margin="150,0,0,0" Click="Select_Click">Select</Button>
+        <Button Grid.Row="2" Width="100" Height="30" Click="Add_Click">Add</Button>
+    </Grid>
+</local:BasePageP>

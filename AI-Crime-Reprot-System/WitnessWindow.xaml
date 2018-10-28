@@ -1,0 +1,27 @@
+﻿<Window x:Class="AIFaceDrawing.WitnessWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AIFaceDrawing"
+        mc:Ignorable="d"
+        Title="WitnessWindow" Height="600" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="470"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <WrapPanel VerticalAlignment="Top" HorizontalAlignment="Stretch" Grid.Row="0">
+            <Button Tag="CriminalReport" Width="100" Height="30" Click="Navigate_Click1">Criminal Report</Button>
+            <Button Tag="WantedCheck" Width="100" Height="30" Click="Navigate_Click1">Wanted</Button>
+        </WrapPanel>
+        <Border Grid.Row="1" Width="800" Height="470" VerticalAlignment="Bottom">
+            <Frame Name="frmLayout" NavigationUIVisibility="Hidden" Height="470" VerticalAlignment="Bottom" Source="WitnessPages/CriminalReport.xaml">
+
+            </Frame>
+        </Border>
+        <Button Grid.Row="2" Width="100" Height="40" HorizontalAlignment="Right" Margin="0,0,150,0" Click="SendBug_Click">Send Bug</Button>
+        <Button Grid.Row="2" Width="100" Height="40" HorizontalAlignment="Right" Margin="0,0,20,0" Click="Logout_Click">Log out</Button>
+    </Grid>
+</Window>

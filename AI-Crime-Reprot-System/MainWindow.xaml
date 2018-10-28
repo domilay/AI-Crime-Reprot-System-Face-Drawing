@@ -1,0 +1,25 @@
+﻿<Window x:Class="AIFaceDrawing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AIFaceDrawing"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <WrapPanel VerticalAlignment="Top" HorizontalAlignment="Stretch" Grid.Row="0">
+            <Button Tag="WelcomePage" Width="100" Height="30" Click="Navigate_Click">Welcome</Button>
+            <Button Tag="RegisterPage" Width="100" Height="30" Click="Navigate_Click">Register</Button>
+            <Button Tag="LoginPage" Width="100" Height="30" Click="Navigate_Click">Log in</Button>
+        </WrapPanel>
+        <Border Grid.Row="1" Width="800" Height="520" VerticalAlignment="Bottom">
+            <Frame Name="frmLayout" NavigationUIVisibility="Hidden" Height="490" VerticalAlignment="Bottom" Source="MainWinPage/WelcomePage.xaml">
+                
+            </Frame>
+        </Border>
+    </Grid>
+</Window>
